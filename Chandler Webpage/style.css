@@ -1,0 +1,90 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body{
+   font-family: 'Montserrat', sans-serif;
+   background-color: #F0FFF0;
+
+ }
+ .app {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+header h1{
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+  color: #2f3640;
+}
+header p{
+  font-size: 20px;
+  text-align: center;
+  color: #2f3640;
+  margin-bottom: 20px;
+}
+ .imgs{
+   margin: auto;
+   align-content: center;
+ }
+.backimg{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  margin-top: -100px;
+   align-content: center;
+   height: 300px;
+   justify-content: space-between;
+   flex-direction: column;
+   position: relative;
+ }
+ .album-image{
+   display: block;
+  margin-left: 54px;
+  margin-right: auto;
+  margin-top: -142px;
+   height: 160px;
+   transform: rotate(10deg);
+   position: relative;
+   z-index: -1;
+   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 97%);
+ }
+
+
+
+.search-box{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+
+}
+
+.search-box:hover >.search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-txt{
+
+  border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 20px;
+ width: 0px;
+ font-weight: bold;
+}
